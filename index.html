@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Triqui</title>
+</head>
+<body>
+    <main>
+        <div id="one" class="one abajo derecha table" data-numero=1 data-dx="arriba" data-dy="izquierda" 
+        data-dz1="s">
+
+        </div>
+        <div id="two" class="two abajo table" data-numero=2 data-dx="arriba" data-dy="centro">
+        </div>
+        <div id="three" class="three abajo izquierda table" data-numero=3 data-dx="arriba" data-dy="derecha"
+        data-dz2="s">
+
+        </div>
+        <div id="four" class="four derecha table" data-numero=4 data-dx="centro" data-dy="izquierda">
+
+        </div>
+        <div id="five" class="five table" data-numero=5 data-dx="centro" data-dy="centro"
+        data-dz1="s"
+        data-dz2="s">
+
+        </div>
+        <div id="six" class="six izquierda table" data-numero=6 data-dx="centro" data-dy="derecha">
+
+        </div>
+        <div id="seven" class="seven arriba derecha table" data-numero=7 data-dx="abajo" data-dy="izquierda" data-dz2="s">
+
+        </div>
+        <div id="eight" class="eight arriba table" data-numero=8 data-dx="abajo" data-dy="centro">
+
+        </div>
+        <div id="nine" class="nine arriba izquierda table" data-numero= 9 data-dx="abajo" data-dy="derecha"data-dz1="s">
+        </div>
+        <div class="empate">
+            <h1>EMPATE</h1>
+            <button>Volver a jugar</button>
+        </div>
+        <div class="ganaste">
+            <h1>GANASTE</h1>
+            <button>Volver a jugar</button>
+        </div>
+        <div class="perdiste">
+            <h1>PERDISTE</h1>
+            <button class="boton">Volver a jugar</button>
+        </div>
+    </main>
+    <template id="temcircle">
+        <div class="circle">
+        </div>
+    </template>
+    <template id="temsquare">
+        <div class="linea-a"></div>
+        <div class="linea-b" ></div>
+    </template>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+body{
+
+    background-color: rgb(136, 199, 255);
+    display: flex;
+    justify-content: center;
+    
+}
+main{
+    margin-top: 7%;
+    display: grid;
+    
+    grid-template-areas:     
+    "one two three"
+    "four five six"
+    "seven eight nine"
+    ;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 20vh;
+}
+.circle{
+    border: 7px solid rgb(255, 255, 255);
+    width: 50%;
+    height: 10vh;
+    border-radius: 50px;
+}
+.linea-a{
+    position: absolute;
+    border-bottom: 7px solid rgb(0, 0, 0);
+    width: 70px;
+    height: 10vh;
+    transform: rotate(-45deg) translate(0px, -25px);; 
+}
+.linea-b{
+    position: absolute;
+    border-bottom: 7px solid rgb(0, 0, 0);
+    width: 70px;
+    height: 10vh;
+    transform: rotate(45deg) translate(0px, -25px);; 
+}
+.one{grid-area: one;}
+.two{grid-area: two;}
+.three{grid-area: three;}
+.four{grid-area:four;}
+.five{grid-area: five;}
+.six{grid-area: six;}
+.seven{grid-area: seven;}
+.eight{grid-area: eight;}
+.nine{grid-area: nine;}
+.abajo{border-bottom: 10px solid rgb(15, 155, 255);}
+.arriba{border-top: 10px solid rgb(15, 155, 255);}
+.derecha{border-right: 10px solid rgb(15, 155, 255);}
+.izquierda{border-left: 10px solid rgb(15, 155, 255);}
+
+.empate{
+    background-color: rgba(255, 242, 0, 0.75);
+    border:7px solid rgb(168, 162, 0);
+    border-radius: 25px;
+    position: absolute;
+    width: 30%;
+    height: 65%;
+    transition-duration: 0.4s;
+    display:none;
+    flex-direction: column;
+
+}
+.empate h1{
+    font-size:4rem
+}
+.empate button{
+    font-size:2rem;
+    border-radius:10px;
+    background-color:rgb(168, 162, 0);
+    color:white;
+    border:none;
+    transition-duration: 0.4s;
+}
+.empate button:hover{
+    font-size:2rem;
+    border-radius:10px;
+    background-color: rgb(255, 242, 0, 0.75);
+    color: black;
+    border:none;
+}
+
+.ganaste{
+    background-color: rgb(120, 249, 0, 0.750);
+    border:7px solid rgb(49, 79, 0);
+    border-radius: 25px;
+    position: absolute;
+    width: 30%;
+    height: 65%;
+    transition-duration: 0.4s;
+    display:none;
+    flex-direction: column;
+
+}
+.ganaste h1{
+    font-size:4rem
+}
+.ganaste button{
+    font-size:2rem;
+    border-radius:10px;
+    background-color:rgb(49, 79, 0);
+    color:white;
+    border:none;
+    transition-duration: 0.4s;
+}
+.ganaste button:hover{
+    font-size:2rem;
+    border-radius:10px;
+    background-color:rgb(158, 255, 1);
+    color: black;
+    border:none;
+}
+.perdiste{
+    background-color: rgba(249, 0, 0, 0.700);
+    border:7px solid rgb(79, 0, 0);
+    border-radius: 25px;
+    position: absolute;
+    width: 30%;
+    height: 65%;
+    display:none;
+    flex-direction: column;
+}
+.perdiste h1{
+    font-size:4rem;
+}
+.perdiste button{
+    font-size:2rem;
+    border-radius:10px;
+    background-color:rgb(79, 0, 0);
+    color:white;
+    border:none;
+    transition-duration: 0.4s;
+}
+.perdiste button:hover{
+    font-size:2rem;
+    border-radius:10px;
+    background-color:rgba(249, 0, 0, 0.700);
+    color: black;
+    border:none;
+}
